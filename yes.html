@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="./yes_style.css" />
+    <link rel="stylesheet" href="smthfru.css" />
+  </head>
+  <body>
+    <button class="btn" id="clickMeButton">
+      Click me Pakku <br />I've something for you!!!
+    </button>
+    <div class="container">
+      <div>
+        <h1 class="header_text">I won't make you mad again!</h1>
+        <h1 class="header_text">You are so cute</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.pinimg.com/originals/58/08/86/580886b53b4e3c97f1cf996d38727e8f.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+    </div>
+
+    <script>
+      // Function to open another HTML file
+      function openNewPage() {
+        window.location.href = "index.html"; // Replace "new_page.html" with the path to your HTML file
+      }
+
+      // Function to enable actions after button click
+      function enableActions() {
+        window.removeEventListener("beforeunload", preventActions); // Remove event listener for closing tab
+      }
+
+      // Add event listener to the button
+      document
+        .getElementById("clickMeButton")
+        .addEventListener("click", function () {
+          openNewPage(); // Call the function to open the new HTML file
+        });
+    </script>
+  </body>
+</html>

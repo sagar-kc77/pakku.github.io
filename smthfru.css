@@ -1,0 +1,50 @@
+/* yes_style.css */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/panda3.jpg"),
+    /* First background image */ url("path_to_image2.jpg"),
+    /* Second background image */ url("images/pakki.jpeg"); /* Third background image */
+  background-size: cover; /* Cover the entire background with images */
+  background-repeat: no-repeat; /* Prevent the background images from repeating */
+  background-position: center; /* Center the background images */
+  background-attachment: fixed; /* Ensure the background stays fixed */
+}
+
+.overlay {
+  /* Adjust the size and position of the overlay */
+  position: absolute;
+  top: 9000;
+  left: 500;
+  width: 70%; /* Full width */
+  height: 70%; /* Full height */
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ); /* Overlay with 50% opacity */
+}
+
+#clickMeButton {
+  background: linear-gradient(45deg, #000000, #0a0c0c); /* Gradient color */
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: background 0.3s ease; /* Smooth transition on hover */
+  position: absolute; /* Positioning */
+  top: 84%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the button */
+}
+
+#clickMeButton:hover {
+  background: linear-gradient(
+    45deg,
+    #ffa000,
+    #e64a19
+  ); /* Gradient color on hover */
+}

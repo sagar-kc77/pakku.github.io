@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./stylessorry.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">
+          Pakku sorry, my intention was not to annoy you or make you feel bad!
+        </h1>
+        <h1 class="header_text">Forgive me! talk to me</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.pinimg.com/originals/a3/0f/ca/a30fca20bae227e332f93b9606ab5dd4.gif"
+          alt="Cute animated illustration"
+        /><br /><br />
+      </div>
+      <br />
+
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Okay</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+                (window.innerWidth -
+                  document.getElementById("noButton").offsetWidth) -
+              85;
+            var y =
+              Math.random() *
+                (window.innerHeight -
+                  document.getElementById("noButton").offsetHeight) -
+              48;
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
